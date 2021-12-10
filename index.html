@@ -14,7 +14,32 @@
     <label for="fname">Nom complet:</label><br/>
     <input type="text" id="fname" name="fname" placeholder="Prénom">
     <label for="lname"></label>
-    <input type="text" id="lname" name="lname" placeholder="Nom">
+    <input type="text" id="lname" name="lname" placeholder="Nom"><br/>
+    <br/>
+    <label for="birthday">Date de naissance:</label><br/>
+    <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2021-12-31" required>
+    <label for="age"></label>
+    <input type="number" id="age" name="age" placeholder="Âge" value="0" min="0" max="100" required><br/>
+    <br/>
+    <label for="gender">Genre</label>
+    <select name="gender" id="gender" required>
+        <option value="female">Femme</option>
+        <option value="male">Homme</option>
+        <option value="other">Autre</option>
+    </select>
+    <label for="nationality">Nationalité</label>
+    <select name="nationality" required>
+        <option value="Française">Française</option>
+        <option value="Anglaise">Anglaise</option>
+        <option value="Espagnol">Espagnol</option>
+        <option value="Allemande">Allemande</option>
+        <option value="Italienne">Italienne</option>
+        <option value="Russe">Russe</option>
+        <option value="Roumaine">Roumaine</option>
+        <option value="Portugaise">Portugaise</option>
+        <option value="Belge">Belge</option>
+        <option value="autre">Autre</option>
+    </select>
 </form>
 </body>
 </html>
