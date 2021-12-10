@@ -21,13 +21,13 @@
     <label for="age"></label>
     <input type="number" id="age" name="age" placeholder="Âge" value="0" min="0" max="100" required><br/>
     <br/>
-    <label for="gender">Genre</label>
+    <label for="gender">Genre:</label><br/>
     <select name="gender" id="gender">
         <option value="female">Femme</option>
         <option value="male">Homme</option>
         <option value="other">Autre</option>
     </select>
-    <label for="nationality">Nationalité</label>
+    <label for="nationality">Nationalité:</label>
     <select id="nationality">
         <option value="Française">Française</option>
         <option value="Anglaise">Anglaise</option>
@@ -39,7 +39,37 @@
         <option value="Portugaise">Portugaise</option>
         <option value="Belge">Belge</option>
         <option value="autre">Autre</option>
-    </select>
+    </select><br/>
+    <br/>
+    <label for="bcountry">Pays de naissance:</label><br/>
+    <input type="text" id="bcountry" name="bcountry" placeholder="Pays de naissance"><br/>
+    <br/>
+    <label for="adress">Adresse Postale:</label><br/>
+    <input type="text" id="adress" name="adress" placeholder="N° de rue, voie ..." pattern="[A-Z]{0-9}-[3]" required>
+    <label for="zip-code">Code Postal:</label>
+    <input type="text" id="zip-code" name="zip-code" placeholder="Code Postal" pattern="[0-9]{5}" required><br/>
+    <br/>
+    <label for="city"></label>
+    <input type="text" id="city" name="city" placeholder="Ville" required><br/>    
+    <br/>
+    <label for="mail">Adresse mail:</label><br/>
+    <input type="email" id="mail" name="mail" placeholder="Votre adresse mail ..." required><br/>
+    <br/> 
+    <label for="job">Métier exercé:</label><br/>
+    <input type="text" id="job" name="job" placeholder="Votre métier"><br/>
+    <br/>
+    <label for="social-security">Numéro de sécurité sociale:</label><br/>
+    <input type="text" id="social-security" name="social-security" placeholder="Numéro de sécurité sociale" pattern="[0-9]{15}" title="15 chiffres attendus ..." required><br/>
+    <br/>
+    <label for="passport-number">Passpor:t</label><br/>
+    <input type="text" id="passport-number" name="passport-number" placeholder="Votre numéro de passport">
+    <label for="date-delivery">Date de délivrance:</label>
+    <input type="date" id="date-delivery" name="date-delivery" min="2010-01-01"><br/>
+    <br/>
+    <label for="date-validity">Date de validité:</label><br/>
+    <input type="date" id="date-validity" name="date-validity" min="2021-01601"><br/>
+    <br/>
+    <input type="submit" value="S'inscrire">
 </form>
 </body>
 </html>
